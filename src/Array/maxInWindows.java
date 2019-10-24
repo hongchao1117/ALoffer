@@ -11,8 +11,7 @@ public class maxInWindows {
         System.out.println(maxInWindows(num,size));
     }
 
-    public static ArrayList<Integer> maxInWindows(int [] num, int size)
-    {
+    public static ArrayList<Integer> maxInWindows(int [] num, int size) {
         ArrayList<Integer> list = new ArrayList<>();
         ArrayList<Integer> array = new ArrayList<>();
         int len = size;

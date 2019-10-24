@@ -45,7 +45,7 @@ public class isSymmetrical {
     }
 
     private boolean isSymmetricalTest( TreeNode left, TreeNode right){
-        if (left == null && left == null)
+        if (left == null && right== null)
             return true;
         if (left == null || right == null)
             return false;
