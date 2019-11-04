@@ -1,8 +1,19 @@
 package Binnary;
 
+import java.util.ArrayList;
+
 public class demo {
     public static void main(String[] args) {
-        System.out.println(NumberOf1(4));
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(i);
+        }
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i)==7)
+                list.remove(i) ;
+        }
+        System.out.println(list);
+//        System.out.println(NumberOf1(4));
     }
 
     public static int NumberOf1(int n) {

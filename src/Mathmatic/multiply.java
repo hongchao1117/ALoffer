@@ -24,7 +24,6 @@ public class multiply {
                 int sum = temp + num[p2];
                 num[p1] += sum /10;
                 num[p2] = sum%10;
-
             }
         }
         StringBuilder sb = new StringBuilder();

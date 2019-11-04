@@ -11,6 +11,7 @@ public class maxSlidingWindow {
         int size = 3;
         System.out.println(Arrays.toString(maxSlidingWindow(num,size)));
     }
+
     public static int[] maxSlidingWindow(int[] nums, int k) {
         if (nums.length==0 || k==0)
             return nums;
