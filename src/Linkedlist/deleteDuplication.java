@@ -6,8 +6,6 @@ import java.util.Queue;
 import java.util.Set;
 
 public class deleteDuplication {
-
-
     public ListNode deleteDuplication(ListNode pHead)
     {
         if (pHead==null ||pHead.next==null)

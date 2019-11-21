@@ -13,7 +13,7 @@ public class Convert {
             return root;
         Stack<TreeNode> stack = new Stack<>();
         TreeNode p = root;
-        TreeNode pre = null;//用于保存中序遍历序列的上一个结点
+         TreeNode pre = null;//用于保存中序遍历序列的上一个结点
         boolean isFirst = true;
         while (p!=null || !stack.isEmpty()){
             while (p!=null){

@@ -14,7 +14,6 @@ public class Print02 {
         s1.push(root);
         //s2：偶数层
         Stack<TreeNode> s2 = new Stack<>();
-
         ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
         while (!s1.isEmpty() || !s2.isEmpty()){
             if (layer%2!=0){

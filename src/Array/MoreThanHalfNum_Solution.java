@@ -1,7 +1,6 @@
 package Array;
 
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 
 /**
  * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
@@ -33,5 +32,7 @@ public class MoreThanHalfNum_Solution {
             }
         }
         return 0;
+
+
     }
 }

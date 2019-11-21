@@ -1,6 +1,5 @@
 package BinTree;
 
-import org.w3c.dom.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -21,7 +20,7 @@ public class OrderBinaryTree {
        while (root!=null || !stack.isEmpty()){
             while (root!=null){
                 System.out.println(root.val);
-                stack.push(root.left);
+                stack.push(root);
                 root = root.left;
             }
             root = stack.pop().right;
