@@ -13,7 +13,6 @@ public class NumberOf1Between1AndN_Solution {
             if (n%10==1)
                 count++;
             n = n/10;
-
         }
         return count;
     }

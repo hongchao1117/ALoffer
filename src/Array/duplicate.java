@@ -18,7 +18,7 @@ public class duplicate {
 
     public static boolean duplicate(int numbers[],int length,int [] duplication) {
         int left = 0;
-        A:for ( left = 0; left <length ; left++) {
+        for ( left = 0; left <length ; left++) {
             int right = length-1;
             while (left<right){
                 if (numbers[left]==numbers[right]){

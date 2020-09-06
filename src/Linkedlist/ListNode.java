@@ -2,7 +2,7 @@ package Linkedlist;
 
 public class ListNode {
    int val;
-   ListNode next = null;
+   ListNode next;
 
     public ListNode(int val) {
         this.val = val;

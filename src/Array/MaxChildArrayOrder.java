@@ -2,7 +2,12 @@ package Array;
 
 //数组最大不连续递增子序列
 public class MaxChildArrayOrder {
-    public int MaxChildArrayOrder(int[] arr){
+    public static void main(String[] args) {
+        int[] nums = {1,5,3,5,3,6,7,91,58,64};
+        System.out.println( MaxChildArrayOrder(nums));
+    }
+
+    public static int MaxChildArrayOrder(int[] arr){
         int n = arr.length;
         int[] temp = new int[n];//用于储存最长子序列
         for (int i = 0; i < n; i++) {
