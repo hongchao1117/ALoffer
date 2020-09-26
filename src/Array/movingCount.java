@@ -1,26 +1,17 @@
 package Array;
 
 public class movingCount {
-    public int movingCount(int threshold, int rows, int cols) {
-        int flag[][] = new int[rows][cols]; //记录是否已经走过
-        return helper(0, 0, rows, cols, flag, threshold);
+    public int movingCount(int m, int n, int k) {
+        boolean[][] visited = new boolean[m][n];
+        return dfs(0, 0, m, n, k, visited);
     }
 
-    private int helper(int i, int j, int rows, int cols, int[][] flag, int threshold) {
-        if (i<0 || i>=rows || j<0 || j>= cols || numSum(i)+numSum(j)>threshold || flag[i][j] == 1)
+    private int dfs(int i, int j, int m, int n, int k, boolean visited[][]) {
+        if (i < 0 || i >= m || j < 0 || j >= n || (i/10 + i%10 + j/10 + j%10) > k || visited[i][j]) {
             return 0;
-        flag[i][j] = 1;
-        return helper(i-1,j,rows,cols,flag,threshold)
-                +helper(i+1,j,rows,cols,flag,threshold)
-                +helper(i,j-1,rows,cols,flag,threshold)
-                +helper(i,j+1,rows,cols,flag,threshold)+1;
-    }
-
-    private int numSum(int i) {
-        int sum = 0;
-        do{
-            sum += i%10;
-        }while ((i=i%10)>0);
-        return sum;
+        }
+        visited[i][j] = true;
+        return dfs(i + 1, j, m, n, k, visited) + dfs(i - 1, j, m, n, k, visited) +
+                dfs(i, j + 1, m, n, k, visited) + dfs(i, j - 1, m, n, k, visited) + 1;
     }
 }
